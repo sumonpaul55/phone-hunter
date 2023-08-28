@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <title>Phone hunter</title>
+  </head>
+  <body class="">
+    <header class="">
+      <h1 class="text-6xl text-center">Hunting phone</h1>
+    </header>
+
+    <main>
+      <!-- search sectinon -->
+      <section class="mt-10">
+        <div class="container mx-auto px-2">
+          <div class="">
+            <div class="">
+              <label for="">Search Phone by name</label><br />
+              <div class="flex items-center">
+                <input
+                  type="text"
+                  placeholder="Type here"
+                  class="input input-bordered w-full max-w-xs"
+                  id="search-field"
+                />
+                <button class="btn btn-primary" onclick="handleSearch()">
+                  Search
+                </button>
+              </div>
+            </div>
+            <!-- another search field -->
+            <!-- <div class="flex-1">
+              <label for="">Search Phone by name</label><br />
+              <div class="flex">
+                <input
+                  type="text"
+                  placeholder="search here"
+                  class="input input-bordered w-full max-w-xs"
+                  id="search-field2"
+                />
+                <button class="btn btn-primary" onclick="handleSearch2()">
+                  Search
+                </button>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container mx-auto">
+          <div class="loader text-center mt-60 hidden" id="loader">
+            <span class="loading loading-spiner loading-lg"></span>
+          </div>
+          <div
+            id="phone-container"
+            class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+          ></div>
+
+          <div class="hidden" id="show-all-Container">
+            <!-- show all button -->
+            <button class="btn btn-secondary mx-auto w-[100px] block mb-5">
+              Show All
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="phone.js"></script>
+  </body>
+</html>
